@@ -1,29 +1,25 @@
 DUDAS:
 Como realmente se calcula las horas laborales?
 SBNH / 200	o	SB / hrs_laborales;
+	Opte por SBNH
 
 https://www.toptrabajos.com/blog/ar/pago-horas-extras/
 dice:
 "dividir tu salario mensual entre el número de horas que trabajas al mes.
 Por lo general, el tiempo laburado son 8 horas diarias por 25 días al mes. Es decir, un total de 200 horas.
 Imaginá que este es tu caso y que tu salario es de $18.000. Entonces vas a dividir así:
-$18.000 / 200 = $90"
-
-
+$18.000 / 200 = $90" este dice que es el sueldo a cobrar.
 
 Este archivo fue creado con la finalidad de especificar los calculos de la calculadora de liquidación de sueldo y el programa para desarrollar la maquetación
-
-Para desarrollar la maquitación se sigue una serie de pasos, primero se busca qué calcular, como se cácula, que se requiere, y si se necesita algún dato del usuario a para que componga del módulo Input.
+Para desarrollar la maquitación se sigue una serie de pasos, primero se busca qué calcular, como se cácula, que se requiere, y si se necesita algún dato del usuario para que componga del módulo Input.
 
 En la maquetación figurará lo que requiere cada calculo, pero no su calculo y tampoco qué requiere de cada cosa del conjunto, por ejemplo Sueldo Bruto requiere de Antiguedad y de eso todos lo que lo compone, en la maquetación no se especifica. Se deberá saber el calculo a profundidad para saber qué cosa se requiere de un conjunto, por ejemplo del conjunto Titulo, el titulo que son letras, o la plata que sale para calcularlo.
-
-
 
 Calcular
 ---------------------------------
 Para calcular lo vamos a hacer con programación, para ello se pueden implementar funciones,por ejemplo:
 
-	void Sueldo_Neto_A_Cobrar();
+	void Sueldo_Neto_A_Cobrar(); //es una sugerencia
 
 Sueldo_a_Cobrar = Sueldo_Neto + Viaticos;
 
