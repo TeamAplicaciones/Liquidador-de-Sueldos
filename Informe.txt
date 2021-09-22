@@ -1,0 +1,19 @@
+El grupo esta conformado por los integrantes:
+ • Cuello Jeremias
+ • Zerda Jesus
+candidatos:
+ • Corzo
+ • Morel
+ • Caceres
+
+La pagina web esta destinada para brindar un servicio de liquidacion de sueldo a trabajadores.
+Se llamara liquidarsueldo.com.ar.
+Distribución de tareas:
+Las tares se distribuyen por modulos en los diferentes lenguajes de programacion y etiquetado.
+Desarrollará la página web fulano acompañado de las competencias de la primera mitad del modulo Input y del modulo Calcular.
+En CSS        desarrollará la página web fulano.
+En JavaScript desarrollará la página web fulano.
+
+Cuello Jeremias: 
+Zerda Jesus: 
+Tareas Totales: 

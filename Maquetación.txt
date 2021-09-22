@@ -1,0 +1,63 @@
+DUDAS:
+Como realmente se calcula las horas laborales?
+SBNH / 200	o	SB / hrs_laborales;
+
+https://www.toptrabajos.com/blog/ar/pago-horas-extras/
+dice:
+"dividir tu salario mensual entre el número de horas que trabajas al mes.
+Por lo general, el tiempo laburado son 8 horas diarias por 25 días al mes. Es decir, un total de 200 horas.
+Imaginá que este es tu caso y que tu salario es de $18.000. Entonces vas a dividir así:
+$18.000 / 200 = $90"
+
+
+
+Este archivo fue creado con la finalidad de especificar los calculos de la calculadora de liquidación de sueldo y el programa para desarrollar la maquetación
+
+Para desarrollar la maquitación se sigue una serie de pasos, primero se busca qué calcular, como se cácula, que se requiere, y si se necesita algún dato del usuario a para que componga del módulo Input.
+
+En la maquetación figurará lo que requiere cada calculo, pero no su calculo y tampoco qué requiere de cada cosa del conjunto, por ejemplo Sueldo Bruto requiere de Antiguedad y de eso todos lo que lo compone, en la maquetación no se especifica. Se deberá saber el calculo a profundidad para saber qué cosa se requiere de un conjunto, por ejemplo del conjunto Titulo, el titulo que son letras, o la plata que sale para calcularlo.
+
+
+
+Calcular
+---------------------------------
+Para calcular lo vamos a hacer con programación, para ello se pueden implementar funciones,por ejemplo:
+
+	void Sueldo_Neto_A_Cobrar();
+
+Sueldo_a_Cobrar = Sueldo_Neto + Viaticos;
+
+Sueldo_Neto = Sueldo_Bruto - Total_Aportes;
+
+Total_Aportes es una sumatoria de aportes;
+Los aportes se sacan por porcentaje del Sueldo Bruto;
+
+Sueldo_Bruto = Sueldo_Basico + Antiguedad_Plata + Titulo_Plata + Inasistencia + Presentismo + Horas_Extras_Totales;
+Antiguedad_Plata = ( (Porcentaje_Por_año * (Fecha de Hoy - Fecha de Ingreso)) * Seldo Basico) /100;
+Horas_Extra_Totales = Horas_Extra_50 + Hora_Extra_100;
+
+Horas_Extra_50 = Hora_Normal * Hora_Extra_50;
+Horas_Extra_100 = Hora_Normal * Hora_Extra_100;
+
+Hora_Normal = ? puedeser SB / Horas_Laborales ó SBNH / Horas_Laborales
+
+SBNH = Sueldo Basico + Antiguedad_Plata + Titulo_Plata;
+
+Horas_Laborales = Horas_por_Dia * Dias_Habiles;
+
+Inasistencia = (SBNH * Inasistencias) / Dias_Habiles;
+
+SI Inasistencia < 0, Presentismo = 0;
+
+Aguinaldo = Mayor_Sueldo_1er_Semestre / 2;
+
+Campo de aportes adicionales desconocidos (max. 15) los ingresa el usuario
+	Tres columnas, una como se llama el aporte [descripción] y las otras dos:
+	 Descuento. Para ingresar la plata fija
+	 Porcentaje. Para ingresar el porcentaje que le sacará al Sueldo Bruto.
+
+Campo de cosas de ganancia o descuento desconocidos (max. 10)
+	Tres columnas, una para la descripción y las otras dos:
+	 Ganancia. Plata fija.
+	 Descuento. Plata fija.
+	 Porcentaje. Porcentaje a sacar de Sueldo Bruto.
