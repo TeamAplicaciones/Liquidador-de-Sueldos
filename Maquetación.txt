@@ -10,6 +10,19 @@ Por lo general, el tiempo laburado son 8 horas diarias por 25 días al mes. Es d
 Imaginá que este es tu caso y que tu salario es de $18.000. Entonces vas a dividir así:
 $18.000 / 200 = $90" este dice que es el sueldo a cobrar.
 
+
+Para realizar este trabajo deberán cumplir con las siguientes consignas.
+ • Indicar conformación e integrantes del grupo.[]
+ • Detallar a que va a estar orientado el sitio que realicen y el nombre que le
+van a poner.[1]
+ • Presentar un informe donde se reflejen los puntos anteriores, junto con la
+distribución de tareas para cada integrante del grupo.[]
+ • Realizar una maquetación en borrador del sitio a desarrollar.[1]
+ • La página debe contener las herramientas trabajadas a lo largo de las clases
+(listas, tablas, enlaces, imágenes, formularios, etc.).[1]
+ • Se deberá presentar un avance del desarrollo del sitio en una fecha que
+coordinaremos con cada grupo.[]
+
 Este archivo fue creado con la finalidad de especificar los calculos de la calculadora de liquidación de sueldo y el programa para desarrollar la maquetación
 Para desarrollar la maquitación se sigue una serie de pasos, primero se busca qué calcular, como se cácula, que se requiere, y si se necesita algún dato del usuario para que componga del módulo Input.
 
