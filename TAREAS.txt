@@ -1,0 +1,6 @@
+HTML
+-----------------------------------------------------
+Diseñar la página web:
+ • Etiquetas semanticas.
+ • Imagenes.
+ • Contenido de la página.
