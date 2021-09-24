@@ -1,6 +1,88 @@
-HTML
------------------------------------------------------
-Diseñar la página web:
- • Etiquetas semanticas.
- • Imagenes.
- • Contenido de la página.
+┌─────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│HTML                                                                                                 │
+├─────────────────────────────────────────────────────────────────────────────────────────────────────│
+│Tarea 1 - 1                                                                                          │
+├─────────────────────────────────────────────────────────────────────────────────────────────────────│
+│Diseñar la página web:                                                                               │
+│  • Etiquetas semanticas.
+│      • Disposición de etiquetas semanticas.
+│  • Imagenes.
+│  • Contenido de la página y de los elementos.
+├─────────────────────────────────────────────────────────────────────────────────────────────────────│ 
+│INPUT - Tarea 2 - ingresar 32 campos / 2 = 16, - 2
+├─────────────────────────────────────────────────────────────────────────────────────────────────────│
+│Crear el formulario donde se ingresaran todos los datos requeridos para liquidar el sueldo. A ser:
+│  • Nombre
+│  • Apellido
+│  • DNI
+│  • Mes a liquidar
+│  • Sueldo Básico
+│  • Antiguedad
+│     • Fecha de ingreso
+│     • ---Fecha de hoy---se puede obtener por JavasCript
+│     • Porcentaje por año
+│  • Titulo
+│     • Titulo
+│     • Plata
+│  • Dias Hábiles del mes*.
+│  *: Averiguar si se puede obtener mediante un vector de 12 posiciones.
+│  • Horas por dia
+│  • Horas Extra
+│     • 100%
+│     • 50%
+│ • Vacaciones
+│ • Inasistencias
+│ • Presentismo
+│ • Viaticos
+│     • Plata por dia
+│     • Plata mensual
+│ • Aportes
+│     • Jubilación
+│     • obra social
+│     • PAMI
+│     • Sindicato
+│     • FAC
+│     • Asignaciones familiares
+│     • Seguro de vida Obligatorio
+│     • ART
+│     • Asignación Familiar por prenatal
+│     • Fondo Nacional de Empleo
+│     • Campo de aportes
+│         • Descuento
+│         • Porcentaje
+│ • Campo de cosas
+│     • Ganacia
+│     • Porcentaje
+│     • Descuento
+├─────────────────────────────────────────────────────────────────────────────────────────────────────│
+│ Output, Recibo de Sueldo - 
+├─────────────────────────────────────────────────────────────────────────────────────────────────────│
+│ • Razon social*
+│ • Nro.CUIL
+│ • Apellido y Nombre
+│ • DNI
+│ • Sector*
+│ • Categoría*
+│ • Banco Deposito*
+│ • Fecha (de hoy)
+│ • Tarea*
+│ • Fecha de ingreso
+│ • Remuneración Básica
+│ • Campo de aportes
+│     • Jubilación
+│     • obra social
+│     • PAMI
+│     • Sindicato
+│     • FAC
+│     • Asignaciones familiares
+│     • Seguro de vida Obligatorio
+│     • ART
+│     • Asignación Familiar por prenatal
+│     • Fondo Nacional de Empleo
+│     • Campo de aportes (lo que introdujo)
+│ • Campo de cosas
+
+  
+
+Referencias:
+---TEXTO---: texto tachado.
