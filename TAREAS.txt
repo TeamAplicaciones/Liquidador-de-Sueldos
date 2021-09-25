@@ -1,15 +1,23 @@
+
+
 ┌─────────────────────────────────────────────────────────────────────────────────────────────────────┐
+├─────────────────────────────────────────────────────────────────────────────────────────────────────│
+│Nunca se permitirá saltear tareas, continuar las siguientes sin terminar las primeras.
+├─────────────────────────────────────────────────────────────────────────────────────────────────────│
 │HTML                                                                                                 │
 ├─────────────────────────────────────────────────────────────────────────────────────────────────────│
-│Tarea 1 - 1                                                                                          │
+│HT1 - 1 Determinar contenidos de la página y como figurará.                                          │
 ├─────────────────────────────────────────────────────────────────────────────────────────────────────│
 │Diseñar la página web:                                                                               │
 │  • Etiquetas semanticas.
 │      • Disposición de etiquetas semanticas.
-│  • Imagenes.
+│  • Acordar un diseño HTML con un diseño en mente en CSS, que coincidan.
+   • Imagenes generales
 │  • Contenido de la página y de los elementos.
+│  • Lograr que la página no se vea vacía, es decir con poco contenido, innovar con adiciones.
+│  • Disposición de los elementos, ubicaciones, etc.
 ├─────────────────────────────────────────────────────────────────────────────────────────────────────│ 
-│INPUT - Tarea 2 - ingresar 32 campos / 2 = 16, - 2
+│INPUT - ingresar 32 campos / 2 = 16, - 2
 ├─────────────────────────────────────────────────────────────────────────────────────────────────────│
 │Crear el formulario donde se ingresaran todos los datos requeridos para liquidar el sueldo. A ser:
 │  • Nombre
@@ -54,6 +62,8 @@
 │     • Ganacia
 │     • Porcentaje
 │     • Descuento
+│
+│Realizar la infraestructura de la página web. 
 ├─────────────────────────────────────────────────────────────────────────────────────────────────────│
 │ Output, Recibo de Sueldo - 
 ├─────────────────────────────────────────────────────────────────────────────────────────────────────│
@@ -81,8 +91,39 @@
 │     • Fondo Nacional de Empleo
 │     • Campo de aportes (lo que introdujo)
 │ • Campo de cosas
+├─────────────────────────────────────────────────────────────────────────────────────────────────────│
+├─────────────────────────────────────────────────────────────────────────────────────────────────────│
+│CSS                                                                                                  │
+├─────────────────────────────────────────────────────────────────────────────────────────────────────│
+│CT1
+├─────────────────────────────────────────────────────────────────────────────────────────────────────│
+│ • Aplicarle estilos a la pagina web en general. A ser:
+│     • Elegir colores que caractericen a la página, deberan combinar.
+│     • Crear un logo e insertarlo en la página.
+│     • Elegir una imagen de fondo de la pagina o de los elementos, contenedores, etc.
+│ • Determinar estilos para los campos incompletos y por lo tanto incorrectos para indicarle al
+│   usuario que debe completarlos y aplicarle estilos a los campos completos tambien.      
+│ • Aplicarle estilos a todos los diferentes elementos de la página, en especial a las etiquetas
+│   semanticas.
+│ • Insertar imagenes que acompañen a la página.
+│ • Investigar para innovar con alguna(s) herramienta(s), funcion(es), etc. que no hayamos visto y
+│   con eso, espectar. [Recordar que deben saber que hace la función <No copy and page>]
+│
+│Objetivo: Página web agradable para los ojos.
+│
+└─────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Ordenes de las partes de la página a Realizar. Para empezar HTML le da soporte a CSS y JavaScript
+1ero HTML
+2do CSS y JavaScript. Se pueden hacer en simultaneo.
 
-  
+CSS no puede darle estilos a elementos de la página que no existen.
+JavaScript no puede programar elementos de la página que no existen.
+
+Tiempos aproximados:
+*Las tareas se deben realizar correspondientemente a como estan dispuestos.*
+HTML:
+  HT1 = 1h.
+  Input = 
 
 Referencias:
 ---TEXTO---: texto tachado.
