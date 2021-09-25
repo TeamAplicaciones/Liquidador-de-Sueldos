@@ -2,7 +2,7 @@
 
 ┌─────────────────────────────────────────────────────────────────────────────────────────────────────┐
 ├─────────────────────────────────────────────────────────────────────────────────────────────────────│
-│Nunca se permitirá saltear tareas, continuar las siguientes sin terminar las primeras.
+│No se permite saltear tareas, continuar siguientes sin terminar las primeras. Se considerara ilegal.
 ├─────────────────────────────────────────────────────────────────────────────────────────────────────│
 │HTML                                                                                                 │
 ├─────────────────────────────────────────────────────────────────────────────────────────────────────│
@@ -122,8 +122,10 @@ JavaScript no puede programar elementos de la página que no existen.
 Tiempos aproximados:
 *Las tareas se deben realizar correspondientemente a como estan dispuestos.*
 HTML:
-  HT1 = 1h.
-  Input = 
+  HT1 = .
+  Input = .
+  Output = .
+CSS:
 
 Referencias:
 ---TEXTO---: texto tachado.
