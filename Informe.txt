@@ -1,15 +1,14 @@
 El grupo esta conformado por los integrantes:
  • Cuello Jeremias
- • Zerda Jesus
-Candidatos:
- • Corzo
- • Morel
- • Caceres
+ • Zerda Jesús
+ • Morel Gabriel
+ • Navarro Julieta
 
 La pagina web esta destinada para brindar un servicio de liquidacion de sueldo a trabajadores.
 Se llamara liquidarsueldo.com.ar.
 Distribución de tareas:
 Cuello Jeremias: 
-Zerda Jesus: 
-
+Zerda Jesús: Programacion de la Pagina Web con Javascript
+Morel Gabriel:
+Navarro Julieta:
 Tareas Totales:
