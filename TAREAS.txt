@@ -111,6 +111,13 @@
 │
 │Objetivo: Página web agradable para los ojos.
 │
+ ─────────────────────────────────────────────────────────────────────────────────────────────────────│
+│JavaScript                                                                                                 │
+├─────────────────────────────────────────────────────────────────────────────────────────────────────│
+│validacion dd todos los campos de entrada 
+ Calcular toda una lista
+
+
 └─────────────────────────────────────────────────────────────────────────────────────────────────────┘
 Ordenes de las partes de la página a Realizar. Para empezar HTML le da soporte a CSS y JavaScript
 1ero HTML
