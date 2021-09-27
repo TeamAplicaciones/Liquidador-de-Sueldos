@@ -116,7 +116,35 @@
 ├─────────────────────────────────────────────────────────────────────────────────────────────────────│
 │validacion dd todos los campos de entrada 
  Calcular toda una lista
+Para calcular lo vamos a hacer con programación, para ello se pueden implementar funciones, por ejemplo:
 
+	anular Sueldo_Neto_A_Cobrar (); // es una sugerencia
+
+Sueldo_a_Cobrar = Sueldo_Neto + Viaticos;
+
+Sueldo_Neto = Sueldo_Bruto - Total_Aportes;
+
+Total_Aportes es una sumatoria de aportes;
+Los aportes se sacan por porcentaje del Sueldo Bruto;
+
+Sueldo_Bruto = Sueldo_Basico + Antiguedad_Plata + Titulo_Plata + Inasistencia + Presentismo + Horas_Extras_Totales;
+Antiguedad_Plata = ((Porcentaje_Por_año * (Fecha de Hoy - Fecha de Ingreso)) * Seldo Básico) / 100;
+Horas_Extra_Totales = Horas_Extra_50 + Hora_Extra_100;
+
+Horas_Extra_50 = Hora_Normal * Hora_Extra_50;
+Horas_Extra_100 = Hora_Normal * Hora_Extra_100;
+
+Hora_Normal =? puedeser SB / Horas_Laborales ó SBNH / Horas_Laborales
+
+SBNH = Sueldo Básico + Antiguedad_Plata + Titulo_Plata;
+
+Horas_Laborales = Horas_por_Dia * Dias_Habiles;
+
+Inasistencia = (SBNH * Inasistencias) / Dias_Habiles;
+
+SI Inasistencia <0, Presentismo = 0;
+
+Aguinaldo = Mayor_Sueldo_1er_Semestre / 2;
 
 └─────────────────────────────────────────────────────────────────────────────────────────────────────┘
 Ordenes de las partes de la página a Realizar. Para empezar HTML le da soporte a CSS y JavaScript
