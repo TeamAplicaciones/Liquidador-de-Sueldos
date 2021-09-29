@@ -8,27 +8,49 @@
 }
 	
 .SEMANTICAS{
-	border-radius: 30PX;
+	border-radius: 30px;
+	padding: 5px;
 }
 
 #HEADER{
-
 	height: 150px;
-	background: blue;
+	background: #0a3ad7;
 }
 
 #HEADER h1{
-	padding-top: 50px;
+	padding-top: 17px;
+	font-size: 70px;
+	font-family: Verdana;
 }
 
-#NAV{
-	height: 80px;
-	background: green;
+#NAV {
+	height: 50px;
+	background: #02567c;
+	border-radius: 30px;
 }
 
-#FORMULARIO{
-	background: #3415FD;
-	float: left;
+#FORMULARIO {
+	background: white;
+	padding-inline-end: 10px;
+	border-color: #0200f5;
+	border-radius: 10px;
+}
+
+#FORMULARIO label {
+	color: black;
+	font-family: Verdana;
+	padding-top: 5px;
+}
+
+#FORMULARIO input {
+	border-radius: 10px;
+	border-block-end-color: black;
+	font-family: Verdana;
+}
+
+#FORMULARIO input{
+		color: black;
+		font-family: Verdana;
 }
 
 #ASIDE{
