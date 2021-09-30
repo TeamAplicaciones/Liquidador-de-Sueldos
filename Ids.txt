@@ -1,0 +1,38 @@
+primera columna Ids
+NOMBRE
+APELLIDO
+DNI
+MAL=mes de alquiler
+CUIL
+SB=sueldo basico
+ANT=antiguedad
+PORAÑ=porcentaje por año de antiguedad
+TIT=titulo
+VDT=valor del titulo
+HAB=dias habiles del mes
+HSXD=horas por dia
+HSEX=horas extras
+VAC=vacaciones
+INAS=inasistencias
+PRES=presentismo
+VIAT=viaticos
+FDI=fecha de ingreso
+DPD=dinero por dia
+APOR=aportes
+JUB=jubilacion
+OBSOC=obra social
+PAMI=PAMI
+SIND=sindicato
+FAC=familiar a cargo
+ASIGFAM=asignaciones familiares
+SEGVID=seguro de vida
+ART=ART
+ASIGFAMPRE=asignacion familiar prenatal
+FONNACEMP=Fondo Nacional de Empleo
+CAMAPOR=Campo de aportes
+DESC0=Descuento
+PORC0=Porcentaje
+CAMCOS=Campo de cosas
+GANAN=Ganacia
+PORC1=Porcentaje
+DESC1=Descuento
