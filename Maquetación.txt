@@ -50,6 +50,8 @@ Horas_Extra_100 = Hora_Normal * Hora_Extra_100;
 
 Hora_Normal = ? puedeser SB / Horas_Laborales ó SBNH / Horas_Laborales
 
+Vacaciones = (SBNH * Dias_Vacaciones) / Dias_Habiles_Mes
+
 SBNH = Sueldo Basico + Antiguedad_Plata + Titulo_Plata;
 
 Horas_Laborales = Horas_por_Dia * Dias_Habiles;
