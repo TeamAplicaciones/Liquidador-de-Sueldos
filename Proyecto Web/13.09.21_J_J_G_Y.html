@@ -4,43 +4,84 @@
 	<title>  Liquidar Sueldo </title>
 	<link rel="stylesheet" type="text/css" href="Estilos.css">
 </head>
+
 <body id="BODY">
+	<header>
+		<center>
+			<h1 id="TITULO">LIQUIDADOR DE SUELDO</h1>
+			<div id="LOGO">
+				<img scr="Pava.jpg" style="margin: 0px; width: 150px; height: 125px; ">
+			</div>
+		</center>
+	</header>
 
-
-	<center>
-		<header class="SEMANTICAS" id="HEADER">
-			<center>
-				<h1 id="TITULO">LIQUIDADOR DE SUELDO</h1>
-			</center>
-		</header>
-	</center>
 	<nav id="NAV">
-		<p style="padding-top: 15px;"> Navegador</p>		
+		<p style="padding-top: 15px;"> Navegador</p>
 	</nav>
 
-	<ASIDE id="ASIDE">
-		
+	<ASIDE>
 	</ASIDE>
 
-	<form id="FORMULARIO">
-		<label for="NOM"> Nombre </label>
-		<input type="text" name="NOM">
+	<div id="FORMULARIO">
+		<form>
+			<!--
+				Nombre
+				Apellido
+				DNI
+				Mes a liquidar
+				Nro.Cuil
+				Sueldo Básico
+				Antiguedad
+					Fecha de ingreso
+					Porcentaje por año
+				Titulo
+					Titulo
+	 				Plata
+				Horas por dia
+	 			Horas Extra
+	 				100%
+	 				50%
+				Vacaciones
+				Inasistencias
+				Presentismo
+				Viaticos
+					Plata por dia
+					Plata mensual	
+				Aportes
+					Jubilación
+					obra social
+					PAMI
+					Sindicato
+					FAC
+					Asignaciones familiares
+					Seguro de vida Obligatorio
+					ART
+					Asignación Familiar por prenatal
+					Fondo Nacional de Empleo
+				Campo de aportes
+					Descuento
+					Porcentaje
+				Campo de cosas
+					Ganacia
+					Porcentaje
+				Descuento
+				-->
 
-		<br>
-		<br>
-		<label id="APELL"> Aplellido</label>
-		<input type="text" name="NOM">
+			<h2 style="font-family: Verdana">Vacaciones</h2>
+			<label for="VAC"> Vacaciones </label>
+			<input id="VAC" type="text" name="NOM"><br />
 
-		<br>
-		<br>
-		<label id="CUIL"> Nro. de CUIL</label>
-		<input type="text" name="CUIL">
+			<label id="APELL"> Aplellido</label>
+			<input type="text" name="NOM"><br />
 
-	</form>
-	
+			<label id="CUIL"> Nro. de CUIL</label>
+			<input type="text" name="CUIL"><br />
+
+		</form>
+	</div>
+
 	<footer id="FOOTER">
-			<H1 >footer</H1>
-		
+		<H1>footer</H1>
 	</footer>
 
 </body>
