@@ -6,7 +6,7 @@ MAL=mes de alquiler
 CUIL
 SB=sueldo basico
 ANT=antiguedad
-PORAÑ=porcentaje por año de antiguedad
+PORAN=porcentaje por aÃ±o de antiguedad
 TIT=titulo
 VDT=valor del titulo
 HAB=dias habiles del mes
