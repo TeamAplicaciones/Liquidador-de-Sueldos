@@ -36,40 +36,95 @@ header{
 		}
 
 #NAV {
-	height: 50px;
+	height: 55px;
 	background: #02567c;
 	border-radius: 30px;
+	margin-block-end: 10px;
 }
+	#NAV ul{
+		list-style: none;
+		padding: 0px;
+	}
+
+	#NAV .ITEM {
+		margin-top: 5px;
+		padding: 15px;
+		float: left;
+	}
+
+	#NAV a {
+		background: #0c00ad;
+		color: white;
+
+		margin: 5px;
+		padding: 5px;
+
+		text-decoration: none;
+		
+		border-color: white;
+		border-style: solid;
+		
+		font-family: Arial;
+		font-size: 15px;
+		
+		border-radius: 15px;
+	}
+
+	#NAV .DESPLE{
+		display: none;
+	}
+
+	#NAV .ITEM a:hover .DESPLE {
+		/*background: #15aff3;
+		color: white;*/
+	}
+
+	#NAV .ITEM a:hover {
+		background: #15aff3;
+		color: white;
+	}
 
 #FORMULARIO {
-	background: #808080;
-	border-color: #0200f5;
-	border-radius: 10px;
 	float: left;
-	width: 30%;
-}
+	width: 80%;
 
-		#FORMULARIO form input {
-			border-radius: 10px;
-			border-style: solid;
-			border-color: blue;
-			font-family: Verdana;
-		}
+	padding: 20px;
 
-		#FORMULARIO form label {
-			color: black;
-			font-family: Verdana;
-		}
-
-aside {
-	float: left;
-	height: 150px;
-	width: 200px;
 	background: white;
+	
+	border-style: solid;
+	border-color: blue;
 	border-radius: 10px;
 }
+		#FORMULARIO label {
+						
+			font-family: Arial;
+			color: black;
+		}
 
-#FOOTER{
+	#FORMULARIO input {
+		padding-top: 5px;
+		font-family: Verdana;
+		border-style: solid;
+		border-color: blue;
+		border-radius: 10px;
+	}
+
+	#FORMULARIO .COLUMNAS {
+		width: 40%;
+		float: left;
+		margin-left: 10px;
+	}
+
+
+	ASIDE_1 {
+		height: 150px;
+		width: 200px;
+		background: white;
+		border-radius: 10px;
+	}
+
+footer{
 	background: yellow;
+	width: 30px;
 }
-
