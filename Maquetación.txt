@@ -1,5 +1,4 @@
-DUDAS:
-Como realmente se calcula las horas laborales?
+Como realmente se calcula las horas laborales:
 SBNH / hrs_laborales;
 
 Para realizar este trabajo deberán cumplir con las siguientes consignas.
