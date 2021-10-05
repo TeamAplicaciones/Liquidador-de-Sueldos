@@ -1,15 +1,6 @@
 DUDAS:
 Como realmente se calcula las horas laborales?
-SBNH / 200	o	SB / hrs_laborales;
-	Opte por SBNH
-
-https://www.toptrabajos.com/blog/ar/pago-horas-extras/
-dice:
-"dividir tu salario mensual entre el número de horas que trabajas al mes.
-Por lo general, el tiempo laburado son 8 horas diarias por 25 días al mes. Es decir, un total de 200 horas.
-Imaginá que este es tu caso y que tu salario es de $18.000. Entonces vas a dividir así:
-$18.000 / 200 = $90" este dice que es el sueldo a cobrar.
-
+SBNH / hrs_laborales;
 
 Para realizar este trabajo deberán cumplir con las siguientes consignas.
  • Indicar conformación e integrantes del grupo.[]
