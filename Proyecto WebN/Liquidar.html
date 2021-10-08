@@ -6,16 +6,25 @@
 </head>
 
 <body id="BODY">
-	<!--<div id="BODY">-->
-	<center>
-		<header>
-			<h1 id="TITULO">LIQUIDADOR DE SUELDO</h1>
-			<div id="LOGO">
-				<img scr="Instagram.JPG" style="margin: 0px; width: 150px; height: 125px; ">
-			</div>
-			</header>
-	</center>
+	
+	<header>
+		<h1 id="TITULO">LIQUIDADOR DE SUELDO</h1>
+		
+		<ul>
+			<li><strong>Calcula tu Sueldo</strong></li>
+			<li><strong>Confecciona tu Curriculum</strong></li>
+			<li><strong>Verifica tu sueldo</strong></li>
+		</ul>
 
+		<ul style="margin-left: -370px;">
+			<li><strong>Conoce de las condiciones de tu Sueldo</strong></li>
+			<li><strong>Sobre las restricciones de tus horas</strong></li>
+			<li><strong>-------------------</strong></li>
+		</ul>
+		<img scr="logo1.JPG" class="LOGOS_HEADER" title="LOGO_HEADER_1">
+		<img scr="logo2.JPG" class="LOGOS_HEADER" title="LOGO_HEADER_2">
+	</header>
+	
 	<nav id="NAV">
 		<ul>
 			<li class="ITEM" style="margin-left: 25px;"> <a href="">Liquidar</a> </li>
@@ -29,7 +38,7 @@
 
 	</nav>
 
-	<ASIDE id="ASIDE" style="margin-right: 50px; margin-top: 80px;">
+	<aside id="ASIDE" style="margin-right: 50px; margin-top: 80px;">
 
 		<center><p style="font-size: 19px;">Quizas te Interese</p></center>
 		
@@ -38,9 +47,8 @@
 			<li><a href="">Confecciona tu Curriculum </a></li>
 			<li style="border-block-end-style: groove;"><a href="">Calcula tu indemnizaci&oacute;n por despido</a></li>
 		</ul>
-	</ASIDE>
+	</aside>
 
-	<frame>
 	<form id="FORMULARIO">
 		<!--
 		Aportes
@@ -63,61 +71,61 @@
 		Descuento
 		-->
 
-			<h3 style="font-family: Verdana; margin: inherit;">Datos requeridos</h3>
-			<hr style="padding: 3px; background: #0000ff"><br>
+			<h3 style="font-family: Verdana; margin: unset; padding: 10px;">Datos requeridos</h3>
+			<hr style="padding: 3px; background: #0000ff">
 
 		<div class="COLUMNAS">
 
 			<!-- label por for e input por id-->
-			<label for=NOMBRE>Nombre:</label><br>
+			<label for=NOMBRE>Nombre</label><br>
 				<input id="NOMBRE" type="text" name="NOMBRE"><br><br>
 
 
-			<label for=DNI>DNI:</label><br>
+			<label for=DNI>DNI</label><br>
 				<input id=DNI type="number" name="DNI"><br><br>
 
 
-			<label for=CUIL>Cuil:</label><br>
+			<label for=CUIL>Cuil</label><br>
 				<input id=CUIL type="number" name="CUIL"><br><br>
 
 
-			<label for=ANT>Anig&utilde;edad:</label><br>
-				<input id=ANT type="number" name="ANT"><br><br>
+				<label for=ANT>Antig&uuml;edad <strong style="color: red;">*</strong></label><br>
+				<input id=ANT type="number" name="ANT" required="required"><br><br>
 
 			<div style="margin-top: 25px;" class="AGROUP">
 				<h1>Titulo</h1>
-				<label for=TIT>Titulo:</label><br>
-					<input  id=TIT type="text" name="TIT"><br><br> 
+				<hr />
+				<label for=TIT>Titulo</label><br>
+					<input  id=TIT type="text" name="TIT"><br><br>
 				
-				<label for=VDT>Valor:</label><br>
-					<input id=VDT type="number" name="VDT"><br><br>				
-			</div>
-			<br><br>
+				<label for=VDT>Valor</label><br>
+					<input id=VDT type="number" name="VDT" style="margin-block-end: -10px;"><br><br>				
+			</div><br />
 
 			<!--
-			<label for=HAB>Dias hábiles del mes:</label><br>
+			<label for=HAB>Dias hábiles del mes</label><br>
 				<input id=HAB type="number" name="HAB"><br><br>
 			-->
 
-			<label for=VAC>Vacaciones:</label><br>
+			<label for=VAC>Vacaciones</label><br>
 				<input id="VAC" type="number" name="VAC"><br><br>
 
 
-			<label for=PRES>Presentismo:</label><br>
-				<input id=PRES type="number" name="PRES"><br><br>
+			<label for=PRES>Presentismo<strong style="color: red;"> *</strong></label><br>
+				<input id=PRES type="number" name="PRES"required="required"><br><br>
 
 
-			<label for=APOR>Aportes:</label><br>
-				<input id=APOR type="number" name="APOR"><br><br>
+			<label for=APOR>Aportes <strong style="color: red;">*</strong></label><br>
+				<input id=APOR type="number" name="APOR" required="required"><br><br>
 
 		</div>
 
 		<div class="COLUMNAS">
-			 <label for=APELLIDO>Apellido:</label><br>
+			 <label for=APELLIDO>Apellido</label><br>
 				<input id="APELLIDO" type="text" name="APELLIDO"><br><br>
 			
 			<label for="MAL">Mes a liquidar <strong style="color: red;">*</strong></label><br>
-				<select id="MAL" name="MAL" value="">
+				<select id="MAL" name="MAL" required="required">
 					<option>  Enero      </option>
 					<option>  Febrero      </option>
 					<option>  Marzo      </option>
@@ -133,44 +141,45 @@
 				</select>
 			<br><br>
 			
-			<label for=SB>Sueldo b&aacute;sico:</label><br>
-				<input id=SB type="number" name="SB"><br><br>
+			<label for=SB>Sueldo b&aacute;sico <strong style="color: red;">*</strong></label><br>
+				<input id=SB type="number" name="SB" required="required"><br><br>
 
-			<label for=PORAN>Porcentaje de a&ntilde;o por antiguedad:</label><br>
-				<input id=PORAN type="number" name="PORAN"><br><br>
+			<label for=PORAN>Porcentaje de a&ntilde;o por antiguedad <strong style="color: red;">*</strong></label><br>
+				<input id=PORAN type="number" name="PORAN" required="required"><br><br>
 				
 			<div class="AGROUP">
 				<h1>Horas</h1>
-				<label for=HSXD>Horas por día:</label><br>
-					<input id=HSXD type="number" name="HSEX50"><br><br>	
+				<hr />
+				<label for=HSXD>Horas por día <strong style="color: red;">*</strong></label><br>
+					<input id=HSXD type="number" name="HSEX50" required="required"><br><br>	
 
-				<label for=HSEX50>Horas extras al 50%:</label><br>
+				<label for=HSEX50>Horas extras al 50%</label><br>
 					<input id=HSEX50 type="number" name="HSEX50"><br><br>
 
-				<label for=HSEX100>Horas extras al 100%:</label><br>
+				<label for=HSEX100>Horas extras al 100%</label><br>
 					<input id=HSEX100 type="number" name="HSEX100"><br><br>
 			</div>
 			<br>
 
-			<label for=INAS>Inasistencias:</label><br>
-				<input id=INAS type="number" name="INAS"><br><br>
+			<label for=INAS>Inasistencias <strong style="color: red;">*</strong></label><br>
+				<input id=INAS type="number" name="INAS" required="required"><br><br>
 			
-			<label for=VIAT>Viaticos:</label><br>
+			<label for=VIAT>Viaticos</label><br>
 				<input id=VIAT type="number" name="VIAT"><br><br>
 
+		<button type="submit"> Calcular </button>
 		</div>
 
-	</form>
-	</frame>
 
-	<ASIDE id="ASIDE" style="margin-left: 50px;">
-		<p style="font-size: 15px;">Seguinos en:</p>
+	</form>
+
+	<aside id="ASIDE" style="margin-left: 50px;">
+		<p style="font-size: 15px;">Seguinos en</p>
 		<ul style="list-style: none; margin-left: -30px; margin-right: 5px; ">
-			<li> <a> <img scr="Facebook.ico" /></a> </li>
-			<li> <a> <img scr="Instagram.png" /></a></li>
+			<li> <a> <img scr="Facebook.ico" title="Facebook.ico"/></a> </li>
+			<li> <a> <img scr="Instagram.png" title="Instagram.png"/></a></li>
 		</ul>
-	</ASIDE>
-	<!--</div>-->
+	</aside>
 
 	<footer>
 		<center>
