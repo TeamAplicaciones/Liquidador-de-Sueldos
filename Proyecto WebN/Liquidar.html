@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>  Liquidar Sueldo </title>
+	<title>  Liquidador Sueldo </title>
 	<link rel="stylesheet" type="text/css" href="Estilos_Liquidar.css">
+	<link rel="stylesheet" type="text/css" href="Estilos_Aguinaldo.css">
 </head>
 
-<body id="BODY">
-	
+<body>
+
 	<header>
 		<h1 id="TITULO">LIQUIDADOR DE SUELDO</h1>
-		
+
 		<ul>
 			<li><strong>Calcula tu Sueldo</strong></li>
 			<li><strong>Confecciona tu Curriculum</strong></li>
@@ -18,16 +19,16 @@
 
 		<ul style="margin-left: -370px;">
 			<li><strong>Conoce de las condiciones de tu Sueldo</strong></li>
-			<li><strong>Sobre las restricciones de tus horas</strong></li>
+			<li><strong>-------------------</strong></li>
 			<li><strong>-------------------</strong></li>
 		</ul>
 		<img scr="logo1.JPG" class="LOGOS_HEADER" title="LOGO_HEADER_1">
 		<img scr="logo2.JPG" class="LOGOS_HEADER" title="LOGO_HEADER_2">
 	</header>
-	
+
 	<nav id="NAV">
 		<ul>
-			<li class="ITEM" style="margin-left: 25px;"> <a href="">Liquidar</a> </li>
+			<li class="ITEM" style="margin-left: 25px;"> <a href="Facebook.ico">Liquidar</a> </li>
 			<li class="ITEM"> <a href="">Aguinaldo</a> </li>
 			<li class="ITEM"> <a href="">Curriculum Vitae</a> </li>
 			<li class="ITEM"> <a href="">Indemnizaciones</a> </li>
@@ -38,148 +39,201 @@
 
 	</nav>
 
-	<aside id="ASIDE" style="margin-right: 50px; margin-top: 80px;">
+	<div class="CONTENIDO">
 
-		<center><p style="font-size: 19px;">Quizas te Interese</p></center>
-		
-		<ul style="margin-left: -10px;">
-			<li><a href="">Calcula tu Aguinaldo </a></li>
-			<li><a href="">Confecciona tu Curriculum </a></li>
-			<li style="border-block-end-style: groove;"><a href="">Calcula tu indemnizaci&oacute;n por despido</a></li>
-		</ul>
-	</aside>
+		<aside class="ASIDE" style="margin-right: 90px; margin-top: 80px; height: 210px;">
 
-	<form id="FORMULARIO">
-		<!--
-		Aportes
-			Jubilación
-			obra social
-			PAMI
-			Sindicato
-			FAC
-			Asignaciones familiares
-			Seguro de vida Obligatorio
-			ART
-			Asignación Familiar por prenatal
-			Fondo Nacional de Empleo
-		Campo de aportes
-			Descuento
-			Porcentaje
-		Campo de cosas
-			Ganacia
-			Porcentaje
-		Descuento
-		-->
+			<center><p style="font-size: 19px;">Quizas te Interese</p></center>
 
-			<h3 style="font-family: Verdana; margin: unset; padding: 10px;">Datos requeridos</h3>
-			<hr style="padding: 3px; background: #0000ff">
+			<ul style="margin-left: -10px;">
+				<li><a href="">Calcula tu Aguinaldo </a></li>
+				<li><a href="">Confecciona tu Curriculum </a></li>
+				<li style="border-block-end-style: groove;"><a href="">Calcula tu indemnizaci&oacute;n por despido</a></li>
+			</ul>
+		</aside>
 
-		<div class="COLUMNAS">
-
-			<!-- label por for e input por id-->
-			<label for=NOMBRE>Nombre</label><br>
-				<input id="NOMBRE" type="text" name="NOMBRE"><br><br>
+		<form class="FORMULARIO" method="get">
 
 
-			<label for=DNI>DNI</label><br>
-				<input id=DNI type="number" name="DNI"><br><br>
 
+			<div class="FORMULARIO_CONTENIDO_01">
 
-			<label for=CUIL>Cuil</label><br>
-				<input id=CUIL type="number" name="CUIL"><br><br>
+				<div class="FORMULARIO__GRUPO" id="GRUPO__NOMBRE">
+					<!-- label por for e input por id-->
+					<label class="FORMULARIO__LABEL" for="NOMBRE">Nombre</label>
+					<input class="FORMULARIO__INPUT" id="NOMBRE" type="text" name="NOM">
+				</div>
 
+				<div class="FORMULARIO__GRUPO" id="GRUPO__DNI">
+					<label class="FORMULARIO__LABEL" for="DNI">DNI</label>
+					<input class="FORMULARIO__INPUT" id="DNI" type="number" name="DNI">
+				</div>
 
-				<label for=ANT>Antig&uuml;edad <strong style="color: red;">*</strong></label><br>
-				<input id=ANT type="number" name="ANT" required="required"><br><br>
+				<div class="FORMULARIO__GRUPO" id="GRUPO__CUIL">
+					<label class="FORMULARIO__LABEL" for="CUIL">Cuil</label>
+					<input class="FORMULARIO__INPUT" id="CUIL" type="number" name="CUIL">
+				</div>
 
-			<div style="margin-top: 25px;" class="AGROUP">
+				<div class="FORMULARIO__GRUPO" id="GRUPO__ANT">
+					<label class="FORMULARIO__LABEL" for="ANT">Antig&uuml;edad <strong style="color: red;">*</strong></label>
+					<input class="FORMULARIO__INPUT" id="ANT" type="number" name="ANT" required>
+				</div>
+
+				<div class="FORMULARIO__GRUPO" id="GRUPO__VAC">
+					<label class="FORMULARIO__LABEL" for="VAC">Vacaciones</label>
+					<input class="FORMULARIO__INPUT" id="VAC" type="number" name="VAC">
+				</div>
+
+				<div class="FORMULARIO__GRUPO" id="GRUPO__PRES">
+					<label class="FORMULARIO__LABEL" for="PRES">Presentismo<strong style="color: red;"> *</strong></label>
+					<input class="FORMULARIO__INPUT" id="PRES" type="number" name="PRES" required="required">
+				</div>
+
+				<div class="FORMULARIO__GRUPO" id="GRUPO__APELLIDO">
+					<label class="FORMULARIO__LABEL" for="APELLIDO">Apellido</label>
+					<input class="FORMULARIO__INPUT" id="APELLIDO" type="text" name="APELLIDO">
+				</div>
+
+				<div class="FORMULARIO__GRUPO" id="GRUPO__MAL">
+					<label class="FORMULARIO__LABEL" for="MAL">Mes a liquidar <strong style="color: red;">*</strong></label>
+					<select style="width: 200px; height: 28px; border-style: solid; border-color: black;" id="MAL" name="MAL" required="required">
+						<option>  Enero      </option>
+						<option>  Febrero      </option>
+						<option>  Marzo      </option>
+						<option>  Abril      </option>
+						<option>  Mayo     </option>
+						<option>  Junio      </option>
+						<option>  Julio      </option>
+						<option>  Agosto      </option>
+						<option>  Septiembre      </option>
+						<option>  Octubre   </option>
+						<option>  Noviembre     </option>
+						<option>  Diciembre      </option>
+					</select>
+				</div>
+
+				<div class="FORMULARIO__GRUPO" id="GRUPO__SB">
+					<label class="FORMULARIO__LABEL" for="SB">Sueldo b&aacute;sico <strong style="color: red;">*</strong></label>
+					<input class="FORMULARIO__INPUT" id="SB" type="number" name="SB" required="required">
+				</div>
+				<div class="FORMULARIO__GRUPO" id="GRUPO__PORAN">
+					<label class="FORMULARIO__LABEL" id="PORAN" for="PORAN">Porcentaje de a&ntilde;o por antiguedad <strong style="color: red;">*</strong></label>
+					<input class="FORMULARIO__INPUT" id="PORAN" type="number" name="PORAN" required="required">
+				</div>
+
+				<div class="FORMULARIO__GRUPO" id="GRUPO__INAS">
+					<label class="FORMULARIO__LABEL" for="INAS">Inasistencias <strong style="color: red;">*</strong></label>
+					<input class="FORMULARIO__INPUT" id="INAS" type="number" name="INAS" required="required">
+				</div>
+				<div class="FORMULARIO__GRUPO" id="GRUPO__VIAT">
+					<label class="FORMULARIO__LABEL" for="VIAT">Viaticos</label>
+					<input class="FORMULARIO__INPUT" id="VIAT" type="number" name="VIAT">
+				</div>
+			</div>
+
+			<div class="AGROUP">
+
 				<h1>Titulo</h1>
 				<hr />
-				<label for=TIT>Titulo</label><br>
-					<input  id=TIT type="text" name="TIT"><br><br>
-				
-				<label for=VDT>Valor</label><br>
-					<input id=VDT type="number" name="VDT" style="margin-block-end: -10px;"><br><br>				
-			</div><br />
 
-			<!--
-			<label for=HAB>Dias hábiles del mes</label><br>
-				<input id=HAB type="number" name="HAB"><br><br>
-			-->
+				<div style="display: grid; margin-left: 20px; grid-template-columns: 1fr 1fr; gap: 20px; ">
+					<div class="FORMULARIO__GRUPO" id="GRUPO__TIT">
+						<label class="FORMULARIO__LABEL" for="TIT">Titulo</label>
+						<input class="FORMULARIO__INPUT" id="TIT" type="text" name="TIT">
+					</div>
 
-			<label for=VAC>Vacaciones</label><br>
-				<input id="VAC" type="number" name="VAC"><br><br>
+					<div class="FORMULARIO__GRUPO" id="GRUPO__VDT">
+						<label class="FORMULARIO__LABEL" for="VDT">Valor</label>
+						<input class="FORMULARIO__INPUT" id="VDT" type="number" name="VDT" style="margin-block-end: -10px;">
+					</div>
+				</div>
+			</div>
 
-
-			<label for=PRES>Presentismo<strong style="color: red;"> *</strong></label><br>
-				<input id=PRES type="number" name="PRES"required="required"><br><br>
-
-
-			<label for=APOR>Aportes <strong style="color: red;">*</strong></label><br>
-				<input id=APOR type="number" name="APOR" required="required"><br><br>
-
-		</div>
-
-		<div class="COLUMNAS">
-			 <label for=APELLIDO>Apellido</label><br>
-				<input id="APELLIDO" type="text" name="APELLIDO"><br><br>
-			
-			<label for="MAL">Mes a liquidar <strong style="color: red;">*</strong></label><br>
-				<select id="MAL" name="MAL" required="required">
-					<option>  Enero      </option>
-					<option>  Febrero      </option>
-					<option>  Marzo      </option>
-					<option>  Abril      </option>
-					<option>  Mayo     </option>
-					<option>  Junio      </option>
-					<option>  Julio      </option>
-					<option>  Agosto      </option>
-					<option>  Septiembre      </option>
-					<option>  Octubre   </option>
-					<option>  Noviembre     </option>
-					<option>  Diciembre      </option>
-				</select>
-			<br><br>
-			
-			<label for=SB>Sueldo b&aacute;sico <strong style="color: red;">*</strong></label><br>
-				<input id=SB type="number" name="SB" required="required"><br><br>
-
-			<label for=PORAN>Porcentaje de a&ntilde;o por antiguedad <strong style="color: red;">*</strong></label><br>
-				<input id=PORAN type="number" name="PORAN" required="required"><br><br>
-				
 			<div class="AGROUP">
+
 				<h1>Horas</h1>
 				<hr />
-				<label for=HSXD>Horas por día <strong style="color: red;">*</strong></label><br>
-					<input id=HSXD type="number" name="HSEX50" required="required"><br><br>	
 
-				<label for=HSEX50>Horas extras al 50%</label><br>
-					<input id=HSEX50 type="number" name="HSEX50"><br><br>
-
-				<label for=HSEX100>Horas extras al 100%</label><br>
-					<input id=HSEX100 type="number" name="HSEX100"><br><br>
+				<div style="display: grid; margin-left: 20px; grid-template-columns: 1fr 1fr; gap: 20px; ">
+					<div class="FORMULARIO__GRUPO" id="GRUPO__HSXD">
+						<label class="FORMULARIO__LABEL" for="HSXD">Horas por día <strong style="color: red;">*</strong></label>
+						<input class="FORMULARIO__INPUT" id="HSXD" type="number" name="HSXD" required="required">
+					</div>
+					<div class="FORMULARIO__GRUPO" id="GRUPO__HSEX50">
+						<label class="FORMULARIO__LABEL" for="HSEX50">Horas extras al 50%</label>
+						<input class="FORMULARIO__INPUT" id="HSEX50" type="number" name="HSEX50">
+					</div>
+					<div class="FORMULARIO__GRUPO" id="GRUPO__HSEX100">
+						<label class="FORMULARIO__LABEL" for="HSEX100">Horas extras al 100%</label>
+						<input class="FORMULARIO__INPUT" id="HSEX100" type="number" name="HSEX100">
+					</div>
+				</div>
 			</div>
-			<br>
 
-			<label for=INAS>Inasistencias <strong style="color: red;">*</strong></label><br>
-				<input id=INAS type="number" name="INAS" required="required"><br><br>
+			<div style="margin-top: 25px;" class="AGROUP">
+
+				<h1>Aportes</h1>
+				<hr>
+
+				<div style="display: grid; margin-left: 20px; grid-template-columns: 1fr 1fr; gap: 20px; ">
+					<div class="FORMULARIO__GRUPO" id="GRUPO__JUB">
+						<label class="FORMULARIO__LABEL" for="JUB">Jubilaci&oacute;n <strong style="color: red;">*</strong></label>
+						<input class="FORMULARIO__INPUT" id="JUB" type="number" name="JUB" maxlength="10" size="150" required="required">
+					</div>
+					<div class="FORMULARIO__GRUPO" id="GRUPO__OBSOC">
+						<label class="FORMULARIO__LABEL" for="OBSOC">Obra Social <strong style="color: red;">*</strong></label>
+						<input class="FORMULARIO__INPUT" id="OBSOC" type="number" name="OBSOC" maxlength="10" size="150" required="required">
+					</div>
+					<div class="FORMULARIO__GRUPO" id="GRUPO__PAMI">
+						<label class="FORMULARIO__LABEL" for="PAMI">PAMI<strong style="color: red;">*</strong></label>
+						<input class="FORMULARIO__INPUT" id="PAMI" type="number" name="PAMI" maxlength="10" size="150" required="required">
+					</div>
+					<div class="FORMULARIO__GRUPO" id="GRUPO__SIND">
+						<label class="FORMULARIO__LABEL" for="SIND">Sindicato<strong style="color: red;">*</strong></label>
+						<input class="FORMULARIO__INPUT" id="SIND" type="number" name="SIND" maxlength="10" size="150" required="required">
+					</div>
+					<div class="FORMULARIO__GRUPO" id="GRUPO__FAC">
+						<label class="FORMULARIO__LABEL" for="FAC">Familiar a cargo</label>
+						<input class="FORMULARIO__INPUT" id="FAC" type="number" name="FAC" maxlength="10" size="150">
+					</div>
+					<div class="FORMULARIO__GRUPO" id="GRUPO__ASIGFAM">
+						<label class="FORMULARIO__LABEL" for="ASIGFAM">Asignaciones Familiares</label>
+						<input class="FORMULARIO__INPUT" id="ASIGFAM" type="number" name="ASIGFAM" maxlength="10" size="150">
+					</div>
+					<div class="FORMULARIO__GRUPO" id="GRUPO__SEGVID">
+						<label class="FORMULARIO__LABEL" for="SEGVID">Seguro de vida</label>
+						<input class="FORMULARIO__INPUT" id="SEGVID" type="number" name="SEGVID" maxlength="10" size="150">
+					</div>
+					<div class="FORMULARIO__GRUPO" id="GRUPO__ART">
+						<label class="FORMULARIO__LABEL" for="ART">ART<strong style="color: red;">*</strong></label>
+						<input class="FORMULARIO__INPUT" id="ART" type="number" name="ART" maxlength="10" size="150" required="required">
+					</div>
+					<div class="FORMULARIO__GRUPO" id="GRUPO__ASIGFAMPRE">
+						<label class="FORMULARIO__LABEL" for="ASIGFAMPRE">Asignaci&oacute;n Familiar Prenatal</label>
+						<input class="FORMULARIO__INPUT" id="ASIGFAMPRE" type="number" name="ASIGFAMPRE" maxlength="10" size="150">
+					</div>
+					<div class="FORMULARIO__GRUPO" id="GRUPO__FONNACEMP">
+						<label class="FORMULARIO__LABEL" for="FONNACEMP"> Fondo Nacional de Empleo</label>
+						<input class="FORMULARIO__INPUT" id="FONNACEMP" type="number" name="FONNACEMP" maxlength="10" size="150">
+					</div>
+
+				</div>
+			</div>
 			
-			<label for=VIAT>Viaticos</label><br>
-				<input id=VIAT type="number" name="VIAT"><br><br>
+			<center><button style="margin: 20px;" type="submit" title="Calcular"> Calcular </button></center>
+		</form>
 
-		<button type="submit"> Calcular </button>
-		</div>
+		<aside class="ASIDE" style="margin: 40px; height: 170px;">
+			<p style="font-size: 15px;">Seguinos en</p>
+			<ul style="list-style: none; margin-left: -30px; margin-right: 5px; ">
+				<li> <a> <img scr="Facebook.ico" title="Facebook.ico" /></a> </li>
+				<li> <a> <img scr="Instagram.png" title="Instagram.png" /></a></li>
+				<li> <a><img scr="Twitter.png" title="Twitter.png" /></a></li>
+				<li> <a></a></li>
+			</ul>
+		</aside>
 
-
-	</form>
-
-	<aside id="ASIDE" style="margin-left: 50px;">
-		<p style="font-size: 15px;">Seguinos en</p>
-		<ul style="list-style: none; margin-left: -30px; margin-right: 5px; ">
-			<li> <a> <img scr="Facebook.ico" title="Facebook.ico"/></a> </li>
-			<li> <a> <img scr="Instagram.png" title="Instagram.png"/></a></li>
-		</ul>
-	</aside>
+	</div>
 
 	<footer>
 		<center>
