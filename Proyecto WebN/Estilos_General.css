@@ -86,7 +86,7 @@ nav {
 		border-radius: 30px;
 	}
 
-	#NAV a:hover{/*es el boton*/
+	nav a:hover{/*es el boton*/
         background: #1938ca;
 		color: white;
 		padding: 5px;
