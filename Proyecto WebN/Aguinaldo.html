@@ -4,24 +4,65 @@
 	<title>
 		Calcular Mi Aguinaldo
 	</title>
+	<link rel="stylesheet" type="text/css" href="Estilos_General.css">
 	<link rel="stylesheet" type="text/css" href="Estilos_Aguinaldo.css">
 	<link rel="shortcut icon" href="logo.png">
 </head>
 <body>
+
+	<header>
+		<h1 id="TITULO">CALCULADORA DE AGUINALDO</h1>
+
+		<ul>
+			<li><strong>Calcula tu Sueldo</strong></li>
+			<li><strong>Confecciona tu Curriculum</strong></li>
+			<li><strong>Verifica tu sueldo</strong></li>
+		</ul>
+
+		<ul style="margin-left: -370px;">
+			<li><strong>Conoce de las condiciones de tu Sueldo</strong></li>
+			<li><strong>-------------------</strong></li>
+			<li><strong>-------------------</strong></li>
+		</ul>
+		<img scr="logo1.JPG" class="LOGOS_HEADER" title="LOGO_HEADER_1">
+		<img scr="logo2.JPG" class="LOGOS_HEADER" title="LOGO_HEADER_2">
+	</header>
+
+	<nav>
+		<ul>
+			<li class="ITEM" style="margin-left: 25px;"> <a href="Liquidar.html">Liquidar</a> </li>
+			<li class="ITEM"> <a href="Aguinaldo.html">Aguinaldo</a> </li>
+			<li class="ITEM"> <a href="">Curriculum Vitae</a> </li>
+			<li class="ITEM"> <a href="">Indemnizaciones</a> </li>
+			<li class="ITEM"> <a href="">Nosotros</a> </li>
+			<li class="ITEM"> <a href="">Contacto</a> </li>
+
+		</ul>
+
+	</nav>
+
+	<aside style="margin-right: 90px; margin-top: 80px; height: 210px;">
+
+		<center><p style="font-size: 19px;">Quizas te Interese</p></center>
+
+		<ul style="margin-left: -10px;">
+			<li><a href="Aguinaldo.html">Calcula tu Aguinaldo </a></li>
+			<li><a href="">Confecciona tu Curriculum </a></li>
+			<li style="border-block-end-style: groove;"><a href="">Calcula tu indemnizaci&oacute;n por despido</a></li>
+		</ul>
+	</aside>
+
 	<center>
-		<form>
+		<form class="FORMULARIO">
 			<table border="0">
-				<tr>
-					<td colspan="2"> <center><h3> Calcula tu Aguinaldo</h3></center></td>
-				</tr>
 				<tr>
 					<td colspan="2"> <center><label for="MESES"> Meses </label><br /><br /></center></td>
 				</tr>
 				<tr>
 					<td> <center> <div>	1er Cuota  </div> </center></td>
 					<td> <center><div> 2da Cuota </div></center></td>
-				</tr>
-				<tr class="TABLE_MESES">
+
+				<tr>
 					<td>
 						<label for="ENERO"> Enero </label>
 						<input id="ENERO" type="number" name="ENERO"><br />
@@ -58,6 +99,17 @@
 				</tr>
 			</table>
 		</form>
-	</center>	
+	</center>
+
+	<aside style="margin: 40px; height: 170px;">
+		<p style="font-size: 15px;">Seguinos en</p>
+		<ul style="list-style: none; margin-left: -30px; margin-right: 5px; ">
+			<li> <a> <img scr="Facebook.ico" title="Facebook.ico" /></a> </li>
+			<li> <a> <img scr="Instagram.png" title="Instagram.png" /></a></li>
+			<li> <a><img scr="Twitter.png" title="Twitter.png" /></a></li>
+			<li> <a></a></li>
+		</ul>
+	</aside>
+
 </body>
 </html>
