@@ -27,30 +27,6 @@
 .FORMULARIO__GRUPO {
 }
 
-	.FORMULARIO__LABEL {
-		display: block;
-		padding: 0px;
-		margin: 1px;
-		cursor: pointer;
-		font-family: Verdana;
-		color: black;
-	}
-
-	.FORMULARIO__INPUT{
-		padding: 10px;
-		height: 28px;
-		line-height: 30px;
-		font-family: Verdana;
-		border-color: black;
-		border-radius: 15px;
-		margin-top: 0px;
-	}
-
-	.FORMULARIO__INPUT:focus {
-		outline: none;
-		border-color: blue;
-	}
-
 	.FORMULARIO .AGROUP{
 		margin: 25px;
 		height: auto;
@@ -104,52 +80,6 @@
 		font-size: 20px;
 	}
 
-.ASIDE {
-	width: 250px;
-	padding: 5px;
-	margin-top: 50px;
-	font-family: verdana;
-	font-size: 15px;
-
-	background: white;
-
-	border-style: solid;
-	border-color: black;
-	border-radius: 10px;
-}
-
-	.ASIDE p {
-		font-family: Arial;
-		
-		margin: 1px;
-		padding-block-end: 5px;
-		border-block-end-style: solid;
-		border-color: black;
-	}
-
-	.ASIDE ul li {
-		padding: 5px;
-		border-top-style: groove;
-		margin-top: 5px;
-}
-
-	.ASIDE ul li a {
-		margin-top: 5px;
-	}
-
-
-footer {
-	font-family: 'Courier New';
-	color: white;
-	background: #0d1d2c;
-	width: 100%;
-	height: auto;
-	float: left;
-	border-top: solid;
-	border-color: black;
-	margin: 0px;
-	margin-top: 30px;
-}
 /*
 para desplazar elementos: frame
 
