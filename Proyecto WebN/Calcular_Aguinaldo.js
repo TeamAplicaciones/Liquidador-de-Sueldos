@@ -1,3 +1,5 @@
+
+
 function Aguinaldo() {
 
 	var PSem = [];
@@ -34,3 +36,7 @@ function Aguinaldo() {
 	document.getElementById("AGUINALDO_MAS_MES_1").value = PSem[5] + MAYPS; //Total en junio
 	document.getElementById("AGUINALDO_MAS_MES_2").value = SSem[5] + MAYSS; //Total en diciembre
 }
+
+/*para cambiar de clase*/
+/*document.getElementById("MyElement").className = "MyClass";*/
+
