@@ -6,26 +6,31 @@
 	</title>
 	<link rel="stylesheet" type="text/css" href="Estilos_General.css">
 	<link rel="stylesheet" type="text/css" href="Estilos_Aguinaldo.css">
+	<script type="text/javascript" src="Calcular_Aguinaldo.js">
+	</script>
+	<script type="text/javascript" src="Estilos_Aguinaldo.js">
+	</script>
 	<link rel="shortcut icon" href="logo.png">
 </head>
 <body>
 
 	<header>
-		<h1 id="TITULO">CALCULADORA DE AGUINALDO</h1>
+		<center>
+			<h1 id="TITULO">CALCULADOR DE AGUINALDO</h1>
+		</center>
 
-		<ul>
+		<ul style="margin-left: -826px">
 			<li><strong>Calcula tu Sueldo</strong></li>
 			<li><strong>Confecciona tu Curriculum</strong></li>
 			<li><strong>Verifica tu sueldo</strong></li>
 		</ul>
 
-		<ul style="margin-left: -370px;">
+		<ul style="margin-left: -494px">
 			<li><strong>Conoce de las condiciones de tu Sueldo</strong></li>
 			<li><strong>-------------------</strong></li>
 			<li><strong>-------------------</strong></li>
 		</ul>
-		<img scr="logo1.JPG" class="LOGOS_HEADER" title="LOGO_HEADER_1">
-		<img scr="logo2.JPG" class="LOGOS_HEADER" title="LOGO_HEADER_2">
+		<img scr="logo1.JPG" style="margin-right: -80px; margin-left: 80px; " class="LOGOS_HEADER" title="LOGO_HEADER_1">
 	</header>
 
 	<nav>
@@ -38,78 +43,112 @@
 			<li class="ITEM"> <a href="">Contacto</a> </li>
 
 		</ul>
-
 	</nav>
 
-	<aside style="margin-right: 90px; margin-top: 80px; height: 210px;">
+	<div class="CONTENIDO_01">
+		<aside style="margin-right: 90px; margin-top: 80px; height: 210px;">
 
-		<center><p style="font-size: 19px;">Quizas te Interese</p></center>
+			<center><p style="font-size: 19px;">Quizas te Interese</p></center>
 
-		<ul style="margin-left: -10px;">
-			<li><a href="Aguinaldo.html">Calcula tu Aguinaldo </a></li>
-			<li><a href="">Confecciona tu Curriculum </a></li>
-			<li style="border-block-end-style: groove;"><a href="">Calcula tu indemnizaci&oacute;n por despido</a></li>
-		</ul>
-	</aside>
+			<ul style="margin-left: -10px;">
+				<li><a href="Aguinaldo.html">Calcula tu Aguinaldo </a></li>
+				<li><a href="">Confecciona tu Curriculum </a></li>
+				<li style="border-block-end-style: groove;"><a href="">Calcula tu indemnizaci&oacute;n por despido</a></li>
+			</ul>
+		</aside>
 
-	<center>
-		<form class="FORMULARIO">
-			<table border="0">
-				<tr>
-					<td colspan="2"> <center><label for="MESES"> Meses </label><br /><br /></center></td>
-				</tr>
-				<tr>
-					<td> <center> <div>	1er Cuota  </div> </center></td>
-					<td> <center><div> 2da Cuota </div></center></td>
+		<center>
+			<div>
+				<!-- ELECCION DE SEMESTRES -->
+				<table class="ELE_SEM">
+					<tr>
+						<td> <center> <button id="BOTON_1ER_SEM" class="INPUT_BOTON" onclick="Activar_Input_1er_Semestre()"> 1er Cuota </button> </center></td>
+						<td> <center> <button id="BOTON_2DO_SEM" class="INPUT_BOTON" onclick="Activar_Input_2do_Semestre()"> 2da Cuota </button> </center></td>
 
-				<tr>
-					<td>
-						<label for="ENERO"> Enero </label>
-						<input id="ENERO" type="number" name="ENERO"><br />
-						<label for="FEBRERO"> Febrero</label>
-						<input id="FEBRERO" type="number" name="FEBRERO"><br />
-						<label for="MARZO"> Marzo </label>
-						<input id="MARZO" type="number" name="MARZO"><br />
-						<label for="ABRIL"> Abril</label>
-						<input id="ABRIL" type="number" name="ABRIL"><br />
-						<label for="MAYO"> Mayo </label>
-						<input id="MAYO" type="number" name="MAYO"><br />
-						<label for="JUNIO"> Junio</label>
-						<input id="JUNIO" type="number" name="JUNIO"><br />
-					</td>
-					<td>
-						<label for="JULIO"> Julio </label>
-						<input id="JULIO" type="number" name="JULIO"><br />
-						<label for="AGOSTO"> Agosto </label>
-						<input id="AGOSTO" type="number" name="AGOSTO"><br />
-						<label for="SEPTIEMBRE"> Septiembre</label>
-						<input id="SEPTIEMBRE" type="number" name="SEPTIEMBRE"><br />
-						<label for="OCTUBRE"> Octubre </label>
-						<input id="OCTUBRE" type="number" name="OCTUBRE"><br />
-						<label for="NOVIEMBRE"> Noviembre</label>
-						<input id="NOVIEMBRE" type="number" name="NOVIEMBRE"><br />
-						<label for="DICIEMBRE"> Diciembre</label>
-						<input id="DICIEMBRE" type="number" name="DICIEMBRE"><br />
-					</td>
-				</tr>
-				<tr>
-					<td colspan="2">
-						<center><button type="submit"> Calcular </button></center>
-					</td>
-				</tr>
-			</table>
-		</form>
-	</center>
+					</tr>
+				</table>
 
-	<aside style="margin: 40px; height: 170px;">
-		<p style="font-size: 15px;">Seguinos en</p>
-		<ul style="list-style: none; margin-left: -30px; margin-right: 5px; ">
-			<li> <a> <img scr="Facebook.ico" title="Facebook.ico" /></a> </li>
-			<li> <a> <img scr="Instagram.png" title="Instagram.png" /></a></li>
-			<li> <a><img scr="Twitter.png" title="Twitter.png" /></a></li>
-			<li> <a></a></li>
-		</ul>
-	</aside>
+				<form class="FORMULARIO_desactivado" id="FORM">
+					<!-- INPUT -->
+					<table>
+						<tr>
+							<td class="CL_INPUT_SEMESTRE_1_desactivado" id="ID_INPUT_SEMESTRE_1">
+								<label for="ENERO"> Enero </label>
+								<input id="ENERO" type="number" name="ENERO"><br />
+								<label for="FEBRERO"> Febrero</label>
+								<input id="FEBRERO" type="number" name="FEBRERO"><br />
+								<label for="MARZO"> Marzo </label>
+								<input id="MARZO" type="number" name="MARZO"><br />
+								<label for="ABRIL"> Abril</label>
+								<input id="ABRIL" type="number" name="ABRIL"><br />
+								<label for="MAYO"> Mayo </label>
+								<input id="MAYO" type="number" name="MAYO"><br />
+								<label for="JUNIO"> Junio</label>
+								<input id="JUNIO" type="number" name="JUNIO"><br />
+							</td>
+						</tr>
+						<tr>
+							<td class="CL_INPUT_SEMESTRE_2_desactivado" id="ID_INPUT_SEMESTRE_2">
+								<label for="JULIO"> Julio </label>
+								<input id="JULIO" type="number" name="JULIO"><br />
+								<label for="AGOSTO"> Agosto </label>
+								<input id="AGOSTO" type="number" name="AGOSTO"><br />
+								<label for="SEPTIEMBRE"> Septiembre</label>
+								<input id="SEPTIEMBRE" type="number" name="SEPTIEMBRE"><br />
+								<label for="OCTUBRE"> Octubre </label>
+								<input id="OCTUBRE" type="number" name="OCTUBRE"><br />
+								<label for="NOVIEMBRE"> Noviembre</label>
+								<input id="NOVIEMBRE" type="number" name="NOVIEMBRE"><br />
+								<label for="DICIEMBRE"> Diciembre</label>
+								<input id="DICIEMBRE" type="number" name="DICIEMBRE"><br />
+							</td>
+						</tr>
+						<tr>
+							<td class="CL_BOTON_desactivado" colspan="2">
+								<center> <button type="button" onclick="Aguinaldo();"> Calcular </button></center>
+							</td>
+						</tr>
+					</table>
+
+					<!-- OUTPUT -->
+					<table>
+						<tr class="OUTPUT_SEM_01_desactivado">
+							<td>
+								<label for="AGUINALDO_1"> Aguinaldo </label>
+								<input id="AGUINALDO_1" />
+							</td>
+							<td>
+								<label for="AGUINALDO_1"> Aguinaldo m&aacute;s cobro de Junio</label>
+								<input id="AGUINALDO_MAS_MES_1" readonly />
+							</td>
+						</tr>
+						<tr class="OUTPUT_SEM_02_desactivado">
+							<td>
+								<label for="AGUINALDO_2"> Aguinaldo </label>
+								<input id="AGUINALDO_2" readonly />
+							</td>
+							<td>
+								<label for="AGUINALDO_2"> Aguinaldo m&aacute;s cobro de Diciembre</label>
+								<input id="AGUINALDO_MAS_MES_2" readonly />
+							</td>
+						</tr>
+					</table>
+				</form>
+
+
+			</div>
+		</center>
+		<aside style="margin: 40px; height: 170px;">
+			<p style="font-size: 15px;">Seguinos en</p>
+			<ul style="list-style: none; margin-left: -30px; margin-right: 5px; ">
+				<li> <a> <img scr="Facebook.ico" title="Facebook.ico" /></a> </li>
+				<li> <a> <img scr="Instagram.png" title="Instagram.png" /></a></li>
+				<li> <a><img scr="Twitter.png" title="Twitter.png" /></a></li>
+				<li> <a></a></li>
+			</ul>
+		</aside>
+
+	</div>
 
 </body>
 </html>
