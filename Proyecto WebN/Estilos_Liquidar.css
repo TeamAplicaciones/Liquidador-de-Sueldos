@@ -1,18 +1,6 @@
-
 .CONTENIDO {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-}
-
-.FORMULARIO {
-	height: auto;
-	width: 650px;
-	/*overflow-y: scroll;*/
-	padding: 10px;
-	background: #fafafa;
-	border-style: solid;
-	border-color: blue;
-	border-radius: 15px;
 }
 
 .FORMULARIO_CONTENIDO_01 {
@@ -20,11 +8,7 @@
 	margin-top: 20px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 20px;
-}
-
-
-.FORMULARIO__GRUPO {
+	gap: 10px;
 }
 
 	.FORMULARIO .AGROUP{
@@ -42,6 +26,11 @@
 		border-radius: 10px;
 	}
 
+	.FORMULARIO .AGROUP h1 {
+		font-size: 25px;
+		margin: 5px;
+	}
+
 	.AGROUP_CONTENIDO_01{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -50,35 +39,12 @@
 	.AGROUP_CONTENIDO_02{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		gap: 20px;
+		gap: 10px;
 	}
 
-	.FORMULARIO .AGROUP h1 {
-		font-size: 25px;
-		margin: 5px;
-	}
-
-	.FORMULARIO button {
-		width: 130px;
-		height: 35px;
-		border-style: solid;
-		border-color: black;
-		background: #5898ff;
-		border-radius: 20px;
-		font-size: 20px;
-	}
-
-	.FORMULARIO button:hover{
-		width: 140px;
-		height: 45px;
-		padding: 5px;
-
-
-		border-style: solid;
-		border-color: black;
-		background: #aac9fc;
-		font-size: 20px;
-	}
+.OUTPUT_desactivado {
+	display: none;
+}
 
 /*
 para desplazar elementos: frame
