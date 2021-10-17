@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    height: 200px;
+    height: auto;
     margin: auto;
     width: 1200px;
     color: white;
@@ -30,9 +30,10 @@ header {
     }
 
     header .LOGOS_HEADER {
-        float: left;
-        margin: 25px;
-        margin-left: 35px;
+        /*float: left;*/
+        margin-top: -20px;
+        margin: 20px;
+        margin-left: 30px;
         width: 160px;
         height: 150px;
     }
@@ -124,32 +125,64 @@ aside {
         margin-top: 5px;
     }
 
-        aside ul li a {
-            margin-top: 5px;
-        }
+    aside ul li a {
+        margin-top: 5px;
+    }
 
-form label{
-    display: block;
-    padding: 0px;
-    margin: 1px;
-    cursor: pointer;
-    font-family: Verdana;
-    color: black;
-}
-
-form input{
+form {
+    height: auto;
+    width: auto;
+    gap:20px;
     padding: 10px;
-    height: 28px;
-    line-height: 30px;
-    font-family: Verdana;
-    border-color: black;
+    background: #fafafa;
+    border-style: solid;
+    border-color: blue;
     border-radius: 15px;
-    margin-top: 0px;
 }
+
+    form label{
+        display: block;
+        padding: 0px;
+        margin: 1px;
+        cursor: pointer;
+        font-family: Verdana;
+        color: black;
+    }
+
+    form input{
+        padding: 10px;
+        height: 28px;
+        line-height: 30px;
+        font-family: Verdana;
+        border-color: black;
+        border-radius: 15px;
+        margin-top: 0px;
+    }
 
     form input:focus {
         outline: none;
         border-color: blue;
+    }
+
+    form button {
+        cursor: pointer;
+        width: 130px;
+        height: 35px;
+        border-style: solid;
+        border-color: black;
+        background: #5898ff;
+        border-radius: 20px;
+        font-size: 20px;
+    }
+
+    form button:hover {
+        width: 140px;
+        height: 45px;
+        padding: 5px;
+        border-style: solid;
+        border-color: black;
+        background: #aac9fc;
+        font-size: 20px;
     }
 
 footer {
