@@ -1,101 +1,52 @@
-.CONTENIDO_01 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+/*function Activar_Input_1er_Semestre() {
+
+    document.getElementById('BOTON_INPUT').class();
+}
+*/
+
+function Activar_Input_1er_Semestre() {
+
+    /*DESACTIVAR OUTPUTS SEMESTRE 2*/
+    document.getElementById('ID_OUTPUT_AGUINALDO_2').className = "OUTPUT_SEM_02_desactivado";
+
+    /*DESACTIVAR BOTON SEMESTRE 2*/
+    document.getElementById('BOTON_2DO_SEM').className = "INPUT_BOTON";
+    /*ACTIVAR BOTON SEMESTRE 2*/
+    document.getElementById('BOTON_1ER_SEM').className = "INPUT_BOTON_activado";
+
+    document.getElementById('FORM').className = "FORMULARIO_activado";
+
+    /*DESACTIVAR INPUTS SEMESTRE 2*/
+    document.getElementById('ID_INPUT_SEMESTRE_2').className = "CL_INPUT_SEMESTRE_2_desactivado";
+    /*ACTIVAR INPUTS SEMESTRE 1*/
+    document.getElementById('ID_INPUT_SEMESTRE_1').className = "CL_INPUT_SEMESTRE_1_activado";
+
+    /*DESACTIVAR BOTON CALCULAR SEMESTRE 2*/
+    document.getElementById('ID_BOTON_2').className = "CL_BOTON_desactivado";
+    /*ACTIVAR BOTON CALCULAR SEMESTRE 1*/
+    document.getElementById('ID_BOTON_1').className = "CL_BOTON_activado";
 }
 
-.FORMULARIO_desactivado{
-    display: none;
+function Activar_Input_2do_Semestre() {
+
+    /*DESACTIVAR OUTPUTS SEMESTRE 1*/
+    document.getElementById('ID_OUTPUT_AGUINALDO_1').className = "OUTPUT_SEM_01_desactivado";
+
+    /*DESACTIVAR BOTON 1 SEMESTRE*/
+    document.getElementById('BOTON_1ER_SEM').className = "INPUT_BOTON";
+    /*ACTIVAR BOTON 2 SEMESTRE*/
+    document.getElementById('BOTON_2DO_SEM').className = "INPUT_BOTON_activado";
+
+    document.getElementById('FORM').className = "FORMULARIO_activado";
+
+    /*DESACTIVAR BOTON 1 SEMESTRE*/
+    document.getElementById('ID_INPUT_SEMESTRE_1').className = "CL_INPUT_SEMESTRE_2_desactivado";
+    /*ACTIVAR BOTON 2 SEMESTRE*/
+    document.getElementById('ID_INPUT_SEMESTRE_2').className = "CL_INPUT_SEMESTRE_2_activado";
+
+    /*DESACTIVAR BOTON CALCULAR SEMESTRE 1*/
+    document.getElementById('ID_BOTON_1').className = "CL_BOTON_desactivado";
+    /*ACTIVAR BOTON CALCULAR SEMESTRE 2*/
+    document.getElementById('ID_BOTON_2').className = "CL_BOTON_activado";
 }
 
-.FORMULARIO_activado {
-    display: block;
-}
-
-.ELE_SEM {
-    width: 500px;
-    height: 100px;
-    background: white;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: blue;
-}
-
-.ELE_SEM {
-    margin-top: 80px;
-    background: white;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: blue;
-}
-
-.INPUT_BOTON {
-    font-size: 25px;
-    height: 50px;
-    width: 200px;
-    background: #0094ff;
-    border-style: solid;
-    border-color:black;
-    border-radius: 5px;
-    cursor:pointer;
-}
-
-    .INPUT_BOTON:hover {
-        width: 200px;
-        height: 50px;
-        font-size: 27px;
-        padding: 5px;
-        border-style: solid;
-        border-radius: 5px;
-        background: #aac9fc;
-    }
-
-.INPUT_BOTON_activado {
-    width: 200px;
-    height: 50px;
-    font-size: 27px;
-    padding: 5px;
-    border-style: solid;
-    border-color: black;
-    border-radius: 5px;
-    background: #003cff;
-}
-
-.CL_INPUT_SEMESTRE_1_activado{
-    display: block;
-}
-
-.CL_INPUT_SEMESTRE_1_desactivado {
-    display: none;
-}
-
-.CL_INPUT_SEMESTRE_2_activado {
-    display: block;
-}
-
-.CL_INPUT_SEMESTRE_2_desactivado {
-    display: none;
-}
-
-.CL_BOTON_desactivado{
-    display: none;
-}
-
-.CL_BOTON_activado{
-    display: block;
-}
-
-.OUTPUT_SEM_01_desactivado {
-    display: none;
-}
-
-.OUTPUT_SEM_01_activado {
-    display: block;
-}
-
-.OUTPUT_SEM_02_desactivado {
-    display: none;
-}
-
-.OUTPUT_SEM_02_activado {
-    display: block;
-}
