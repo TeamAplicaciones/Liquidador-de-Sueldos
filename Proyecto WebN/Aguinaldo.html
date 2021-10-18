@@ -10,7 +10,7 @@
 	</script>
 	<script type="text/javascript" src="Estilos_Aguinaldo.js">
 	</script>
-	<link rel="shortcut icon" href="logo.png">
+	<link rel="shortcut icon" href="logo.jpeg">
 </head>
 <body>
 
@@ -74,17 +74,17 @@
 						<tr>
 							<td class="CL_INPUT_SEMESTRE_1_desactivado" id="ID_INPUT_SEMESTRE_1">
 								<label for="ENERO"> Enero </label>
-								<input id="ENERO" type="number" name="ENERO"><br />
+								<input id="ENERO" type="number" name="ENERO" required><br />
 								<label for="FEBRERO"> Febrero</label>
-								<input id="FEBRERO" type="number" name="FEBRERO"><br />
+								<input id="FEBRERO" type="number" name="FEBRERO" required><br />
 								<label for="MARZO"> Marzo </label>
-								<input id="MARZO" type="number" name="MARZO"><br />
+								<input id="MARZO" type="number" name="MARZO" required><br />
 								<label for="ABRIL"> Abril</label>
-								<input id="ABRIL" type="number" name="ABRIL"><br />
+								<input id="ABRIL" type="number" name="ABRIL" required><br />
 								<label for="MAYO"> Mayo </label>
-								<input id="MAYO" type="number" name="MAYO"><br />
+								<input id="MAYO" type="number" name="MAYO" required> <br />
 								<label for="JUNIO"> Junio</label>
-								<input id="JUNIO" type="number" name="JUNIO"><br />
+								<input id="JUNIO" type="number" name="JUNIO" required><br />
 							</td>
 						</tr>
 						<tr>
@@ -104,31 +104,32 @@
 							</td>
 						</tr>
 						<tr>
-							<td class="CL_BOTON_desactivado" colspan="2">
-								<center> <button type="button" onclick="Aguinaldo();"> Calcular </button></center>
+							<td colspan="2">
+								<center> <button class="CL_BOTON_desactivado" id="ID_BOTON_1" type="button" onclick="Aguinaldo_Sem_1();"> Calcular </button></center>
+								<center> <button class="CL_BOTON_desactivado" id="ID_BOTON_2" type="button" onclick="Aguinaldo_Sem_2();"> Calcular </button></center>
 							</td>
 						</tr>
 					</table>
 
 					<!-- OUTPUT -->
 					<table>
-						<tr class="OUTPUT_SEM_01_desactivado">
+						<tr class="OUTPUT_SEM_01_desactivado" id="ID_OUTPUT_AGUINALDO_1">
 							<td>
 								<label for="AGUINALDO_1"> Aguinaldo </label>
-								<input id="AGUINALDO_1" />
+								<input id="AGUINALDO_1" readonly />
 							</td>
 							<td>
-								<label for="AGUINALDO_1"> Aguinaldo m&aacute;s cobro de Junio</label>
+								<label for="AGUINALDO_MAS_MES_1"> Aguinaldo m&aacute;s cobro de Junio</label>
 								<input id="AGUINALDO_MAS_MES_1" readonly />
 							</td>
 						</tr>
-						<tr class="OUTPUT_SEM_02_desactivado">
+						<tr class="OUTPUT_SEM_02_desactivado" id="ID_OUTPUT_AGUINALDO_2">
 							<td>
 								<label for="AGUINALDO_2"> Aguinaldo </label>
 								<input id="AGUINALDO_2" readonly />
 							</td>
 							<td>
-								<label for="AGUINALDO_2"> Aguinaldo m&aacute;s cobro de Diciembre</label>
+								<label for="AGUINALDO_MAS_MES_2"> Aguinaldo m&aacute;s cobro de Diciembre</label>
 								<input id="AGUINALDO_MAS_MES_2" readonly />
 							</td>
 						</tr>
