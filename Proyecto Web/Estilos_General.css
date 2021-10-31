@@ -10,9 +10,9 @@ body {
 body::-webkit-scrollbar {
     display: none;
 }
-    header {
+
+header {
     float: left;
-    margin: -11px -11px 20px -11px;
     width: 1354px;
     height: 300px;
     color: white;
@@ -62,6 +62,7 @@ nav {
 }
 
     nav ul {
+        float: left;
         list-style: none;
         padding: 0px;
     }
@@ -142,9 +143,9 @@ aside {
     }
 
 form {
+    margin-top: 20px;
     height: auto;
     width: auto;
-    gap: 20px;
     padding: 10px;
     background: #0256FF;
     /*background: #5898ff*/ /*#fafafa*/ /*;*/
@@ -189,10 +190,11 @@ form {
         border-color: aqua;
     }
 
-    form button {
+    button {
         cursor: pointer;
-        width: 130px;
-        height: 35px;
+        width: auto;
+        height: auto;
+        padding: 5px 15px;
         border-style: solid;
         border-color: black;
         background: #0a3ad7;
@@ -200,9 +202,7 @@ form {
         font-size: 20px;
     }
 
-    form button:hover {
-        /*width: 135px;
-        height: 40px;*/
+    button:hover {
         border-style: solid;
         border-color: black;
         background: #aac9fc;
