@@ -52,11 +52,13 @@ function Validar_1() {
 		Calcular_Aguinaldo();
 		Desplegar_Outputs_Sem_1();
 	}
+
 	else alert("Complete correctamente todos los campos.");
 
 }
 
 function Validar_2() {
+	
 	VAL = "true";
 
 	for (i = 0; (i < 6) && (VAL == "true"); i++) {
@@ -74,6 +76,7 @@ function Validar_2() {
 		Calcular_Aguinaldo();
 		Desplegar_Outputs_Sem_2();
 	}
+	
 	else alert("Complete correctamente todos los campos.");
 }
 
@@ -89,7 +92,7 @@ function Calcular_Aguinaldo() {
 	}
 
 	MAYPS = MAYPS / 2;//Aguialdo Primer Semestre
-	MAYSS = MAYPS / 2;//Aguialdo Segundo Semestre
+	MAYSS = MAYSS / 2;//Aguialdo Segundo Semestre
 
 	document.getElementById("AGUINALDO_1").value = MAYPS; //Aguialdo Primer Semestre
 	document.getElementById("AGUINALDO_2").value = MAYSS; //Aguialdo Segundo Semestre
