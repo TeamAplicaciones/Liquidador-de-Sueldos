@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log-in</title>
+	<link rel="stylesheet" type="text/css" href="Estilos_General.css">
+	<script type="text/javascript">
+		function LOGIN(){
+			var USUA=document.getElementById('USUA').value;
+			var CONTRA=document.getElementById('CONTRA').value;
+			if ((USUA=="Jesus")&&(CONTRA=="12345")) {
+				window.location="Aguinaldo.html";
+			}
+			else{
+				alert("Usuario y/o Contraseña incorrectos");
+			}
+		}
+	</script>
+</head>
+<body>
+	<center>
+	<form id="login">
+		<center>
+		<table>
+			<tr>
+				<td>
+				<label for="USUA">Usuario</label>
+				<input type="text" id="USUA">
+				<label for="CONTRA">Contraseña</label>
+				<input type="" id="CONTRA"><br><br>
+				<button type="button" onclick="LOGIN()">Ingresar</button>
+				</td>
+			</tr>
+		</table>
+		</center>
+	</form>
+	</center>
+
+	<aside style="box-shadow: rgb(0,0,0,1) 30px 30px 20px; margin-left: 50px; height: 310px/*310px*/; width: 300px; ">
+
+		<p style="font-size: 20px;">Seguinos en</p>
+
+		<ul style="list-style: none; margin-left: -30px; margin-right: 5px;">
+			<a style="text-decoration: none;" target="_blank" href="https://www.facebook.com/jesus.zerda.33">
+			<li>
+				<table>
+					<tr>
+						<td>
+							<img src="Facebook.ico " style="width: 40px; height:40px;" title="Facebook.ico">
+						</td>
+						<td>
+							<h4>-----------------</h4>
+						</td>
+					</tr>
+				</table>
+			</li>
+			</a>
+			<a target="_blank" href="https://www.instagram.com">
+			<li>
+				<table>
+					<tr>
+						<td>
+							<img src="Instagram.png" style="width: 40px; height:40px;" title="Instagram.png">
+						</td>
+						<td>
+							<h4>-----------------</h4>
+						</td>
+					</tr>
+				</table>
+			</li>
+			</a>
+			<a target="_blank" href="https://www.twitter.com">
+			<li>
+				<table>
+					<tr>
+						<td>
+							<img src="Twitter.png" style="margin-left: -20px; width: 80px; height:40px;" title="Instagram.jpg">
+						</td>
+						<td>
+							<h4 style="margin-left: -10px;">-----------------</h4>
+						</td>
+					</tr>
+				</table>
+			</li>
+			</a>
+		</ul>
+
+	</aside>
+</body>
+</html>
