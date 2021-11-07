@@ -1,0 +1,20 @@
+#CONTENDOR
+{
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	
+}
+
+#CONTENDOR_02
+{
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: auto auto;
+}
+
+#CONTENDOR_Form
+{
+	width: 360px;
+	height: 230px;
+
+}
