@@ -1,39 +1,34 @@
-primera columna Ids
-NOMBRE
-APELLIDO
-DNI
-MAL=mes de alquiler
-CUIL
-SB=sueldo basico
-ANT=antiguedad
-PORAN=porcentaje por año de antiguedad
-TIT=titulo
-VDT=valor del titulo
-HAB=dias habiles del mes
-HSXD=horas por dia
-HSEX100=horas extras 100%
-HSEX50=horas extras 50%
-VAC=vacaciones
-INAS=inasistencias
-PRES=presentismo
-VIAT=viaticos
-FDI=fecha de ingreso
-DPD=dinero por dia
-APOR=aportes
-JUB=jubilacion
-OBSOC=obra social
-PAMI=PAMI
-SIND=sindicato
-FAC=familiar a cargo
-ASIGFAM=asignaciones familiares
-SEGVID=seguro de vida
-ART=ART
-ASIGFAMPRE=asignacion familiar prenatal
-FONNACEMP=Fondo Nacional de Empleo
-CAMAPOR=Campo de aportes
-DESC0=Descuento
-PORC0=Porcentaje
-CAMCOS=Campo de cosas
-GANAN=Ganacia
-PORC1=Porcentaje
-DESC1=Descuento
+Estos no son los nombres de las variables.
+Variables de Ingreso:
+  NOMBRE = nombre
+  APELLDIO = apelldio
+  DNI
+  CUIL
+  MES_A_LIQUIDAR
+  SUELDO_BASICO
+  FECHA_INGRESO
+  ANTIGUEDAD_PORCENTAJE = porcentaje de aportes a sacar del sueldo bruto.
+  PRESENTISMO
+  INASISTENCIAS
+  VIATICOS
+  DIAS__VACACIONES
+  FAMILIARES_A_CARGO
+
+  APORTE__JUBILACION
+  APORTE__OBRA_SOCIAL
+  APORTE__PAMI
+  APORTE__SINDICATO
+  
+  TITULO
+  TITULO__VALOR
+  
+  HORAS__DIA
+  HORAS__EXTRA_100 = horas extras al 100%.
+  HORAS__EXTRA_50 = horas extras al 100%.
+  
+  ASIGNACION__NACIMIENTO
+  ASIGNACION__ADOPCION
+  ASIGNACION__MATRIMONIO
+  ASIGNACION__PRENATAL
+  ASIGNACION__HIJO
+  ASIGNACION__HIJO_DISCAPACITADO
